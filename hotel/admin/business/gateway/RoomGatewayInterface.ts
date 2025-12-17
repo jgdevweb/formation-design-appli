@@ -1,5 +1,5 @@
 const Room = require('./Room');
-interface RoomRepositoryInterface {
+interface RoomGatewayInterface {
   findAll(): Array<typeof Room>;
   findOneByNumber(number: number): typeof Room
   findByFloor(floor: number): Array<typeof Room>

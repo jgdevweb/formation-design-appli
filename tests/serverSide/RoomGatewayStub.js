@@ -1,4 +1,4 @@
-class RoomRepositoryStub {
+class RoomGatewayStub {
   constructor(roomsList) {
     this.rooms = roomsList;
 
@@ -21,4 +21,4 @@ class RoomRepositoryStub {
   }
 }
 
-module.exports = RoomRepositoryStub;
+module.exports = RoomGatewayStub;

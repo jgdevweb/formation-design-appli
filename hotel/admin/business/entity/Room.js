@@ -5,10 +5,10 @@ class Room {
   price;
 
   constructor(floor, number, priceForZeroFloorRoom) {
-    const priceCalculator = new roomPriceCalculator(priceForZeroFloorRoom);
+    const priceCalculator = new roomPriceCalculator();
     this.floor = floor;
     this.number = number;
-    this.price = priceCalculator.calculatePricePerNight(floor);
+    this.price = priceCalculator.calculatePricePerNight(floor, priceForZeroFloorRoom);
   }
 
   setPrice(price) {
